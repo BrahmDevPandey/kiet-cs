@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration</title>
+    <style>
+        div{
+            margin: 10px;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Student Registration</h1>
+    <h4>
+    <form action="#" name="student" method="get"></form>
+        <div id="nameinfo">
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div id="passinfo">
+            <label for="passwd">Password: </label>
+            <input type="password" name="passwd" id="passwd">
+        </div>
+        <div id="ageinfo">
+            <label for="age">Age: </label>
+            <input type="number" name="age" id="age" min="18" max="120">
+        </div>
+        <div id="dobinfo">
+            <label for="dob">Date of Birth: </label>
+            <input type="date" name="dob" id="dob">
+        </div>
+        <div id="fcolor">
+            <label for="color">Favourite Color: </label>
+            <input type="color" name="color" id="color">
+        </div>
+        <div id="genderinfo">
+            <label for="gender">Gender: </label>
+            <input type="radio" name="radio" id="radio">Male
+            <input type="radio" name="radio" id="radio">Female
+        </div>
+        <div id="lang">
+            <label for="language">Programming Languages: </label>
+            <ul type="none">
+                <li><input type="checkbox" name="java" id="java">Java</li>
+                <li><input type="checkbox" name="python" id="python">Python</li>
+                <li><input type="checkbox" name="cpp" id="cpp">C++</li>
+                <li><input type="checkbox" name="swift" id="swift">Swift</li>
+                <li><input type="checkbox" name="c" id="c">C</li>
+            </ul>
+        </div>
+        <div id="emailinfo">
+            <label for="email">Email Id:</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div id="section">
+            <label for="section">Section: </label>
+            <select name="section" id="section">
+                <option value="A">Section A</option>
+                <option value="B">Section B</option>
+                <option value="C">Section C</option>
+            </select>
+        </div>
+        <div id="feedback">
+            <label for="feedback">Provide your feedback</label>
+            <textarea name="feedback" id="feedback" cols="30" rows="10" placeholder="Provide feedback about your experience on the website"></textarea>
+        </div>
+        <div id="submit">
+            <h3>
+                <input type="submit" name="submit" value="Send">
+            </h3>
+        </div>
+    </form>
+    </h4>
+  </body>
+</html>
