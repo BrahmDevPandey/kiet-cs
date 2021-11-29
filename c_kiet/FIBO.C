@@ -4,7 +4,7 @@
 
 void main()
 {
-	long a = 0, b = 1, c, n, i;
+	long a = 1, b = 0, c, n, i;
 
 	clrscr();
 	printf("Enter number of terms to be printed: ");
