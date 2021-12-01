@@ -1,0 +1,11 @@
+#para1 {
+    background-image: url("images/castle1.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#para2 {
+    background-image: url("images/castle2.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
