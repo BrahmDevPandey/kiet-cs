@@ -1,0 +1,38 @@
+/* package codechef; // don't place package name! */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		int t, n, arr[], sum, sumLargest;
+		Scanner sc = new Scanner(System.in);
+		t = sc.nextInt();
+		
+		for(; t > 0; t--) {
+		    n = sc.nextInt();
+		    arr = new int[n];
+		    
+            // input the array
+		    for(int i = 0; i < n; i++){
+                arr[i] = sc.nextInt();
+		    }
+		   
+		    sumLargest = Integer.MIN_VALUE;
+		    for(int i = 0; i < 2; i++) {
+		        sum = 0;
+		        for(int j = i; j < n; j+=2) {
+		            sum += arr[j];
+		        }   
+		        if(sum > sumLargest)
+		            sumLargest = sum;
+		    }
+		    System.out.println(sumLargest);
+		}
+	}
+}
