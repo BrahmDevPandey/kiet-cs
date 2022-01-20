@@ -1,5 +1,11 @@
 {
   "files.associations": {
-    "BITWISE.C": "cpp"
+    "BITWISE.C": "cpp",
+    "POINTERS.C": "cpp",
+    "MATSUM.C": "cpp",
+    "REVERSE.C": "cpp",
+    "PREPOST.C": "cpp",
+    "COMMA.C": "cpp",
+    "string.h": "c"
   }
 }

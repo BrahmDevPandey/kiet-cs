@@ -1,11 +1,28 @@
 import java.util.*;
 
 public class test {
-    public static void main(String[] args) {
-        String s = "Hello";
-        System.out.println(s.substring(0, s.length() - 1));
-
+    public test(float i, float f) {
+        System.out.println(i + f);
     }
+
+    public test(int i, int f) {
+        System.out.println(i + f);
+    }
+
+    public static void main(String[] args) {
+        test t = new test(4.2f, 2.5f);
+    }
+    // int num = 100;
+
+    // test(int n) {
+    // num = n;
+    // }
+
+    // test t = new test(4);
+    // System.out.println(t.num);
+    // String s = "Hello";
+    // System.out.println(s.substring(0, s.length() - 1));
+
     // // char str[] = "Hello".toCharArray();
     // // System.out.println(findLcm(200, 8));
     // // List<Integer> list = new ArrayList<Integer>(3);
