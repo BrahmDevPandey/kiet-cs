@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="img/logo.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brahm Dev Pandey</title>
+    <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" /> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="bootstrap/icons/font/bootstrap-icons.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+    function submitEnrollData() {
+        const name = document.getElementById('name').value;
+        const phoneNumber = document.getElementById('phoneNumber').value;
+        const email = document.getElementById('email').value;
+        const query = document.getElementById('query').value;
+
+        // //logging the details into the console
+        // console.log(firstName, lastName, phoneNumber, email);
+        // console.log("submit enroll called");
+
+        // saving the details to localStorage
+        localStorage.setItem("name", name);
+        localStorage.setItem("phoneNumber", phoneNumber);
+        localStorage.setItem("email", email);
+        localStorage.setItem("query", query);
+
+        // giving a success notification
+        document.getElementById('notification').innerHTML = "Details saved successfully";
+        document.getElementById('notify-box').style.display = "block";
+        setInterval(() => {
+            document.getElementById('notify-box').style.display = "none";
+        }, 4000);
+    }
+</script>
+
+<body>
+    <!-- The navbar -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark py-3 fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">My Portfolio</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse text-center" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#qualifications" class="nav-link m-auto">My Qualifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link m-auto">My skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link m-auto">My Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link m-auto" href="#contact-info">Contact Info</a>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+
+    <!-- The intro area -->
+    <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-md-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1>My name is <span class="text-warning">Brahm Dev Pandey</span></h1>
+                    <p class="lead py-2">I am a Computer Science student and an AstroPhysics Lover. <br> I love
+                        Computer programming and solving puzzles.
+                    </p>
+                    <button class="btn btn-primary btn-lg mb-3" data-bs-toggle="modal" data-bs-target="#contact">Contact
+                        me</button>
+                </div>
+                <div>
+                    <img src="img/me.png" alt="" class="img-fluid rounded-circle mb-3">
+                    <div class="text-center mb-2">
+                        <a href="" class="text-light mx-3">
+                            <i class="bi bi-twitter h3"></i>
+                        </a>
+                        <a href="" class="text-light mx-3">
+                            <i class="bi bi-facebook h3"></i>
+                        </a>
+                        <a href="" class="text-light mx-3">
+                            <i class="bi bi-linkedin h3"></i>
+                        </a>
+
+                        <a href="" class="text-light mx-3">
+                            <i class="bi bi-instagram h3"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The qualifications section -->
+    <section class="p-5" id="qualifications">
+        <div class="container">
+            <h2 class="text-center text-dark mb-4"><strong>My Qualifications</strong></h2>
+            <div class="row g-4">
+                <!-- first column -->
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body">
+                            <h1 class="mb-3 text-center">
+                                <i class="bi bi-book-half"></i>
+                            </h1>
+                            <h3 class="card-title text-center">Post Graduation</h3>
+                            <p class="card-text">
+                            <ul>
+                                <li>
+                                    <strong>Course:</strong> Master of Computer Applications
+                                </li>
+                                <li>
+                                    <strong>Institute:</strong> KIET Group of Institutions, Ghaziabad, Uttar Praadesh
+                                </li>
+                                <li>
+                                    <strong>Year:</strong>2021-23
+                                </li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- second column -->
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body">
+                            <h1 class="mb-3 text-center">
+                                <i class="bi bi-book-half"></i>
+                            </h1>
+                            <h3 class="card-title text-center">Graduation</h3>
+                            <p class="card-text">
+                            <ul>
+                                <li>
+                                    <strong>Course:</strong> Bachelor Of Science
+                                </li>
+                                <li>
+                                    <strong>Institute:</strong> University of Allahabad, Allahabad, Uttar Pradesh
+                                </li>
+                                <li>
+                                    <strong>Year:</strong>2018-21
+                                </li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- third column -->
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body">
+                            <h1 class="mb-3 text-center">
+                                <i class="bi bi-book-half"></i>
+                            </h1>
+                            <h3 class="card-title text-center">Intermediate</h3>
+                            <p class="card-text">
+                            <ul>
+                                <li>
+                                    <strong>Institute:</strong> St. Michael's Convent School, Mankapur, Uttar Pradesh
+                                </li>
+                                <li>
+                                    <strong>Year:</strong>2016-18
+                                </li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- the second row -->
+            <div class="row g-4 mt-2">
+                <!-- the first column -->
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body">
+                            <h1 class="mb-3 text-center">
+                                <i class="bi bi-book-half"></i>
+                            </h1>
+                            <h3 class="card-title text-center">High School</h3>
+                            <p class="card-text">
+                            <ul>
+                                <li>
+                                    <strong>Institute:</strong> Fatima School, Mankapur Uttar Pradesh
+                                </li>
+                                <li>
+                                    <strong>Year:</strong>2016
+                                </li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- second column -->
+                <div class="col-md">
+                </div>
+                <!-- third column -->
+                <div class="col-md">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- the skills section -->
+    <section id="skills" class="p-5 bg-primary">
+        <div class="container">
+            <h2 class="text-center text-white"><strong>My Skills</strong></h2>
+            <p class="lead text-center text-white mb-5">
+                These are the technologies I am skilled in.
+            </p>
+
+            <!-- the skills cards -->
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <!-- the first card -->
+                    <div class="card">
+                        <div class="card-body bg-light text-center">
+                            <img src="img/html5.png" alt="" class="img-fluid rounded-circle mb-3">
+                            <div class="card-title lead fw-bold ">HTML</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <!-- the second card -->
+                    <div class="card">
+                        <div class="card-body bg-light text-center">
+                            <img src="img/css3.png" alt="" class="img-fluid rounded-circle mb-3">
+                            <div class="card-title lead fw-bold ">CSS</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <!-- the third card -->
+                    <div class="card">
+                        <div class="card-body bg-light text-center">
+                            <img src="img/js.png" alt="" class="img-fluid rounded-circle mb-3">
+                            <div class="card-title lead fw-bold ">Javascript</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <!-- the fourth card -->
+                    <div class="card">
+                        <div class="card-body bg-light text-center">
+                            <img src="img/bootstrap.png" alt="" class="img-fluid rounded-circle mb-3">
+                            <div class="card-title lead fw-bold ">Bootstrap</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <!-- the fifth card -->
+                    <div class="card">
+                        <div class="card-body bg-light text-center">
+                            <img src="img/java.png" alt="" class="img-fluid rounded-circle mb-3">
+                            <div class="card-title lead fw-bold ">Java</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <!-- the sixth card -->
+                    <div class="card">
+                        <div class="card-body bg-light text-center">
+                            <img src="img/android.png" alt="" class="img-fluid rounded-circle mb-3">
+                            <div class="card-title lead fw-bold ">Android Development</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <!-- the seventh card -->
+                    <div class="card">
+                        <div class="card-body bg-light text-center">
+                            <img src="img/react.png" alt="" class="img-fluid rounded-circle mb-3 w-75">
+                            <div class="card-title lead fw-bold ">React</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <!-- the eighth card -->
+                    <div class="card">
+                        <div class="card-body bg-light text-center">
+                            <img src="img/unity.png" alt="" class="img-fluid rounded-circle mb-3">
+                            <div class="card-title lead fw-bold ">Unity 3D</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- the projects section -->
+    <section class="p-5" id="projects">
+        <div class="container">
+            <h2 class="text-center text-dark mb-4"><strong>My Projects</strong></h2>
+            <div class="row g-4">
+                <!-- first column -->
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">Gym Website</h3>
+                            <p class="card-text">
+                                <a href="http://brahmdevpandey.github.io/gym%20website/index.html" target="_blank">
+                                    <img class="img-fluid" src="img/projects/gym.png" alt="Gym Website Screenshot">
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- second column -->
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">Bootcamp Website</h3>
+                            <p class="card-text">
+                                <a href="http://brahmdevpandey.github.io/bootcamp%20website/index.html" target="_blank">
+                                    <img class="img-fluid" src="img/projects/bootcamp.png" alt="Web
+                                    Development Bootcamp Website Screenshot">
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- The contacts section -->
+    <section class="p-5">
+        <div class="container" id="contact-info">
+            <h2 class="text-center mb-4"><strong>Contact Info</strong></h2>
+            <div class="row g-4">
+                <div class="col-md">
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item">
+                            <span class="bi bi-envelope-fill"></span> brahm.2124mca1099@kiet.edu
+                        </li>
+                        <li class="list-group-item">
+                            <span class="bi bi-telephone-fill"></span> 9565583235
+                        </li>
+                        <li class="list-group-item">
+                            <span class="bi-whatsapp"></span> 9565583235
+                        </li>
+                        <li class="list-group-item">
+                            <span class="bi-geo-alt-fill"></span> Shivam Bihar Colony, Ghaziabad, Uttar Pradesh
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md mx-5">
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item">
+                            <a href="https://www.linkedin.com/in/brahm-dev-pandey-922582186/" target="_blank"
+                                class="text-dark" style="text-decoration: none;">
+                                <i class="bi bi-linkedin"></i>
+                                brahm-dev-pandey-922582186
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="https://brahmdevpandey.github.io/" target="_blank" class="text-dark"
+                                style="text-decoration: none;">
+                                <i class="bi bi-github"></i>
+                                BrahmDevPandey.github.io
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="https://www.hackerrank.com/brahmdevpandey71" target="_blank" class="text-dark"
+                                style="text-decoration: none; margin-left: -5px;">
+                                <img style="width: 1.5em;" src="img/hackerrank.png">
+                                brahmdevpandey71
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="https://www.codechef.com/users/brahmdevpandey" target="_blank" class="text-dark"
+                                style="text-decoration: none; margin-left: -5px;">
+                                <img style="width: 1.5em;" src="img/codechef.png">
+                                brahmdevpandey
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The footer (copyright) section -->
+    <section class="p-5 bg-dark text-light position-relative">
+        <div class="container">
+            <div class="text-center lead">No copyright issues. Feel free to reuse.
+            </div>
+        </div>
+    </section>
+
+    <!-- The go up button -->
+    <div class="position-fixed bottom-0 end-0 p-3">
+        <a href="#" class="text-danger"><i class="bi bi-arrow-up-circle h1"></i></a>
+    </div>
+
+    <!-- The contact form using modal -->
+    <div class="modal fade" id="contact">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="enrollLabel">Contact Form</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" />
+                </div>
+                <div class="modal-body">
+                    <p class="lead">Please provide your detils below and I will get back to you.</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class='col-form-label'>Name:</label>
+                            <input type="text" class="form-control" id="firstName">
+                        </div>
+                        <div class="mb-3">
+                            <label for="phoneNumber" class="col-form-label">Phone/Mobile Number:</label>
+                            <input type="text" class="form-control" id="phoneNumber">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="col-form-label">Email:</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="query" class="col-form-label">Query (if any):</label>
+                            <input type="text" class="form-control" id="query">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" data-bs-dismiss="modal" class="btn btn-primary"
+                        onclick="submitEnrollData()">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- A notification panel -->
+    <div class="position-fixed top-0 end-0 bg-light text-dark rounded-3 me-5 px-3 py-1" id="notify-box">
+        <i class="bi bi-check-all text-success h3"></i>
+        <span id="notification" class="h3">
+            new notification
+        </span>
+    </div>
+    <!-- including the bootstrap script file -->
+    <!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

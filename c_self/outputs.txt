@@ -1,0 +1,7 @@
+Enter the array elements: 
+The array elements are: 
+456 4554 55 5 66 44 5566 455 444 55 
+
+The largest element in the array is 5566.
+The smallest element in the array is 5.
+The sum of all elements of the array is 11700.
