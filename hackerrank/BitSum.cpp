@@ -12,7 +12,6 @@ public:
             for (j = i + 1; j < N; j++)
             {
                 m = A[i];
-                n = A[j];
                 sum += bitDiff(m, n);
             }
         return sum;
