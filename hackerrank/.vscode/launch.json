@@ -6,6 +6,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch Prisoners",
+      "request": "launch",
+      "mainClass": "Prisoners",
+      "projectName": "hackerrank_6665107c"
+    },
+    {
+      "type": "java",
+      "name": "Launch test",
+      "request": "launch",
+      "mainClass": "test",
+      "projectName": "hackerrank_6665107c"
+    },
+    {
+      "type": "java",
+      "name": "Launch list",
+      "request": "launch",
+      "mainClass": "list",
+      "projectName": "hackerrank_6665107c"
+    },
+    {
+      "type": "java",
       "name": "Launch Intersection",
       "request": "launch",
       "mainClass": "Intersection",

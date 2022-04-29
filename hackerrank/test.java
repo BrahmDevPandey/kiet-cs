@@ -1,17 +1,17 @@
 import java.util.*;
 
 public class test {
-    public test(float i, float f) {
-        System.out.println(i + f);
-    }
+    // public test(float i, float f) {
+    // System.out.println(i + f);
+    // }
 
-    public test(int i, int f) {
-        System.out.println(i + f);
-    }
+    // public test(int i, int f) {
+    // System.out.println(i + f);
+    // }
 
-    public static void main(String[] args) {
-        test t = new test(4.2f, 2.5f);
-    }
+    // public static void main(String[] args) {
+    // test t = new test(4.2f, 2.5f);
+    // }
     // int num = 100;
 
     // test(int n) {
@@ -50,11 +50,14 @@ public class test {
     // num2 = num2;
     // }
 
-    // public static void main(String args[]) {
-    // test tester = new test(20, 40);
-    // System.out.println(tester.num1);
-    // System.out.println(tester.num2);
-    // int num;
-    // System.out.println(num);
-    // }
+    public static void main(String args[]) {
+        // test tester = new test(20, 40);
+        // System.out.println(tester.num1);
+        // System.out.println(tester.num2);
+        // int num;
+        // System.out.println(num);
+        String name = "Aman Pandey";
+        for (int i = 0; i < name.length(); i++)
+            System.out.println(name.charAt(i));
+    }
 }
