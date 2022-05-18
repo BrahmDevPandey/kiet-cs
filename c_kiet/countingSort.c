@@ -42,24 +42,31 @@ void outputArr(int arr[], int size)
 
 void countingSort(int arr[], int sorted[], int size)
 {
-    int cumulativeFreq[MAX] = {0}, i;
+    int cumulativeFreq[MAX], i;
     
+    // initializing the cumulative frequencies with zeros initially
+    for(i = 1; i < size + 1; i++)
+    {
+        cumulativeFreq[i] = 0;
+    }
+
     // finding the frequencies of elements
-    for(i = 0; i < size; i++) 
+    for(i = 1; i < size + 1; i++) 
     {
         cumulativeFreq[arr[i]]++;   // increase the frequency on every occurrence of the element in the unsorted array
     }
 
     // finding the cumulative frequencies by adding all previous frequencies of the element
-    for(i = 1; i < size; i++)
+    for(i = 1; i < size + 1; i++)
     {
         // no need to change the value at 0 index, as 0th index has same frequency and cumulative frequency
         cumulativeFreq[i] = cumulativeFreq[i] + cumulativeFreq[i-1];
     }
 
     // now, arrange the elements in the main array by looking values in the cumulative frequency array
-    for(i = size - 1; i >= 0; i--)
+    for(i = size; i >= 1; i--)
     {
         sorted[cumulativeFreq[arr[i]]] = arr[i];
+        cumulativeFreq[arr[i]]--;
     }
 }
